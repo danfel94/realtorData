@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+
+/*http://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div*/
+.rounded-corners{
+	border-radius: 20px;
+  	border: 10px solid black;
+	display: block;
+	margin: 0 auto 15px auto;
+}

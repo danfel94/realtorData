@@ -1,6 +1,6 @@
 angular.module('starter', ['ionic'])
 
-.controller('MainController',function($scope){
+.controller('MainController',function($scope, $ionicLoading){
   $scope.justice = 5;
 
   $scope.questions = ['Have you heard of Docusign?','Have you heard of Periscope?',
@@ -11,6 +11,11 @@ angular.module('starter', ['ionic'])
   $scope.values = ['Yes','No'];
 
   $scope.rangeQuestion = ['From 1 - 10, how in touch with technology are you?'];
+
+  $scope.submitData = function(){
+    $ionicLoading.show({template: 'Data Sent!', duration:1000});
+    //TODO Submit the data to firebase 
+  };
 
 })
 
